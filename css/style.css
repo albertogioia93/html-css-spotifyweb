@@ -25,13 +25,30 @@ header {
     z-index: 999;
 }
 
-main {
+.container {
     position: relative;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 90px);
     overflow: auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigazione {
+    background-color: pink;
+    width: 230px;
+    height: 400px;
 }
 
 footer {
     height: 90px;
     background-color: #282828;
+}
+
+.mini {
+    background-color: red;
+    height: 50vh;
+    width: calc(100% / 6);
+    margin-top: 90px;
+    border: 2px solid white;
 }
