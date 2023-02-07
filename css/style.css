@@ -12,6 +12,26 @@ RESET
 }
 
 body {
-    background-color: aquamarine;
-    padding: 30px;
+    background-color: #141922;
+}
+
+header {
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+}
+
+main {
+    position: relative;
+    height: calc(100vh - 180px);
+    overflow: auto;
+}
+
+footer {
+    height: 90px;
+    background-color: #282828;
 }
