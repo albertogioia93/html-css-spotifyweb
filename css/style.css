@@ -29,16 +29,107 @@ main {
     background-color: black;
     width: 230px;
     height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
 }
+.logocontainer {
+    max-width: 138px;
+    margin-bottom: 24px;
+}
+.logosmall {
+    display: none;
+}
+
+.imputcontainer {
+    display: flex;
+    margin-bottom: 10px;
+}
+.iconscontainer {
+    max-width: 25px;
+}
+img {
+    width: 100%;
+}
+
+.imput {
+    color: #a3a3a3;
+    font-size: 14px;
+    align-self: center;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.sezplaylist {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.sezplaylist .playlist {
+    color: white;
+    font-weight: 600;
+    margin-top: 17px;
+}
+.pluscontainer {
+    display: flex;
+    gap: 5px;
+    margin-top: 14px;
+}
+.pluscontainer i {
+    background-color: #a3a3a3;
+    font-size: 20px;
+    padding: 10px;
+}
+.sezplaylist ul {
+    list-style-type: none;
+    overflow: auto;
+    
+}
+
+.sezplaylist ul li {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.margintop {
+    margin-top: auto;
+}
+
+.utente {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;  
+}
+.iconautente img {
+    background-color: #808080;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.nomeutente {
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* qui */
 
 .fisso {
     height: 90px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    left: 0px;
+    left: 230px;
     top: 0px;
-    width: 100%;
-    z-index: 1;
+    right: 0px;
 }
 
 .button {
@@ -64,7 +155,7 @@ main {
     flex-wrap: wrap;
     background-color: pink;
     padding-top: 90px;
-    /* margin-top 90px non corretto perchè questo div va sopra footer */
+    
 }
 .mini {
     background-color: red;
@@ -72,6 +163,7 @@ main {
     width: calc(100% / 6);
     /* margin-top: 90px; */
     border: 2px solid white;
+    
 }
 
 
@@ -80,9 +172,20 @@ main {
 @media screen and (max-width: 552px) {
     .navigazione {
         max-width: 50px;
+        padding: 4px 10px;
     }
     .sezionebrani {
         width: calc(100vw - 50px);
+    }
+    .fisso {
+        left: 50px;
+    }
+    .logobig {
+        display: none;
+    }
+
+    .logosmall {
+        display: block;
     }
 }
 
@@ -181,8 +284,7 @@ ul {
 .utente {
     display: flex;
     align-items: center;
-    gap: 5px;
-    
+    gap: 5px;  
 }
 
 .iconautente img {
