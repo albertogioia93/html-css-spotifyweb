@@ -139,18 +139,35 @@ main {
     font-weight: 600;
 }
 
+/* DA QUI */
 
 .sezionebrani {
     /* position: relative; */
     width: calc(100vw - 230px);
     height: calc(100vh - 90px);
     overflow: auto;
-    /* padding: 30px;
-    padding-left: 250px; */
-    display: flex;
-    flex-wrap: wrap;
-    background-color: pink;
+    /* display: flex;
+    flex-wrap: wrap; */
     padding-top: 90px; 
+}
+
+.prova {
+    display: flex;
+    padding: 20px;
+}
+
+.sezionebrani ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.sezionebrani ul li {
+    color: #65686d;
+    font-size: 14px;
+    font-weight: 700;
+    width: calc(100% / 6);
 }
 
 .mini {
