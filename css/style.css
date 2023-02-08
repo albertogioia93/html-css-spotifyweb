@@ -15,7 +15,78 @@ body {
     background-color: #141922;
 }
 
-header {
+footer {
+    height: 90px;
+    background-color: #282828;
+}
+
+main {
+    height: calc(100vh - 90px);
+    display: flex;
+}
+
+.navigazione {
+    background-color: black;
+    width: 230px;
+    height: calc(100vh - 90px);
+}
+
+.fisso {
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.button {
+    position: absolute;
+    color: white;
+    padding: 14px 41px;
+    top: 20px;
+    right: 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 14PX;
+    font-weight: 600;
+}
+
+.sezionebrani {
+    /* position: relative; */
+    width: calc(100vw - 230px);
+    height: calc(100vh - 90px);
+    overflow: auto;
+    /* padding: 30px;
+    padding-left: 250px; */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: pink;
+    padding-top: 90px;
+    /* margin-top 90px non corretto perchè questo div va sopra footer */
+}
+.mini {
+    background-color: red;
+    height: 30vh;
+    width: calc(100% / 6);
+    /* margin-top: 90px; */
+    border: 2px solid white;
+}
+
+
+
+
+@media screen and (max-width: 552px) {
+    .navigazione {
+        max-width: 50px;
+    }
+    .sezionebrani {
+        width: calc(100vw - 50px);
+    }
+}
+
+/* header {
     height: 90px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -211,4 +282,4 @@ footer {
     }
 
     
-}
+} */
