@@ -48,6 +48,12 @@ MAIN ASIDE SX
     display: flex;
     margin-bottom: 10px;
 }
+
+.imputcontainer:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .iconscontainer {
     max-width: 25px;
 }
@@ -62,6 +68,11 @@ MAIN ASIDE SX
     align-self: center;
     margin-left: 5px;
     font-weight: 600;
+}
+
+.imput:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .sezplaylist {
@@ -79,15 +90,21 @@ MAIN ASIDE SX
     gap: 5px;
     margin-top: 14px;
 }
+
+
 .pluscontainer i {
     background-color: #a3a3a3;
     font-size: 20px;
     padding: 10px;
 }
+
+.pluscontainer i:hover {
+    background-color: white;
+}
+
 .sezplaylist ul {
     list-style-type: none;
-    overflow: auto;
-    
+    overflow: auto;  
 }
 
 .sezplaylist ul li {
@@ -95,6 +112,11 @@ MAIN ASIDE SX
     font-size: 14px;
     font-weight: 600;
     margin-top: 15px;
+}
+
+.sezplaylist ul li:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .margintop {
@@ -281,6 +303,12 @@ footer {
 .sinister small {
     color: #a3a3a3;
 }
+
+.sinister small:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
 .sezionealbum .iconcine {
     display: flex;
     gap: 15px;
@@ -288,6 +316,11 @@ footer {
 .sezionealbum .iconcine i {
     color: #a3a3a3;
 }
+.sezionealbum .iconcine i:hover {
+    color: white;
+    cursor: pointer;
+}
+
 
 .sezionetempo {
     width: 60%;
@@ -302,11 +335,22 @@ footer {
     display: flex;
     list-style-type: none;
     gap: 20px;
+    align-items: center;
 }
 
 .sezionetempo ul li {
     color: white;
     font-size: 16px;
+}
+
+.sezionetempo ul li:nth-child(3) {
+    color: white;
+    font-size: 16px;
+    border: 3px solid white;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
 }
 
 .sezionesbarra {
