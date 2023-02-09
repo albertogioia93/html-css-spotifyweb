@@ -154,6 +154,7 @@ MAIN ASIDE DX
     left: 230px;
     top: 0px;
     right: 0px;
+    z-index: 999;
 }
 
 .button {
@@ -233,11 +234,17 @@ MAIN ASIDE DX
     color: white;
     padding: 5px;
     width: calc(100% / 6);
+    position: relative;
 }
 
 .locandina {
     width: 100%;
     margin-bottom: 20px;
+}
+
+.locandina:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .infolocandina h3 {
@@ -262,6 +269,11 @@ MAIN ASIDE DX
     margin-bottom: 20px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.locandina2:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .infolocandina2 h3 {
@@ -344,13 +356,10 @@ footer {
 }
 
 .sezionetempo ul li:nth-child(3) {
-    color: white;
-    font-size: 16px;
-    border: 3px solid white;
-    border-radius: 50px;
-    width: 25px;
-    height: 25px;
-    text-align: center;
+    font-size: 30px;
+}
+.sezionetempo ul li:nth-child(3) :hover {
+    font-size: 35px;
 }
 
 .sezionesbarra {
@@ -368,6 +377,18 @@ footer {
     width: 50%;
     border-radius: 25px;
     background-color: #5a5a5a;
+}
+
+.sbarrapiccola {
+    width: 20%;
+    background-color: #c1c1c1;
+    height: 5px;
+    border-radius: 25px;
+}
+
+.sbarrapiccola:hover {
+    background-color: lime;
+    cursor: pointer;
 }
 
 .sezionevolume {
