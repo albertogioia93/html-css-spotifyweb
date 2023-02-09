@@ -146,6 +146,13 @@ MAIN ASIDE DX
     font-weight: 600;
 }
 
+.button:hover {
+    padding: 16px 43px;
+    font-size: 16PX;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .prova {
     width: calc(100% - 230px);
 }
@@ -174,6 +181,11 @@ MAIN ASIDE DX
     font-size: 14px;
     font-weight: 700;
     padding: 10px;
+}
+
+.sezionebrani ul li:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .sezionebrani h2 {
